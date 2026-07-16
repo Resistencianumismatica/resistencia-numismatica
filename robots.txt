@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://resistencianumismatica.github.io/Resistencia_numismatica/sitemap.xml
+# RSS: https://resistencianumismatica.github.io/Resistencia_numismatica/feed.xml

@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restauros — Resistência Numismática</title>
+  <meta name="description" content="Arquivo Digital de Investigação em Numismática Medieval Portuguesa — estudos, análises e publicações científicas.">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="Resistência Numismática" href="../../feed.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-brand">
+        <p class="site-masthead"><a href="../../index.html">Resistência Numismática</a></p>
+        <p class="site-subtitle">Arquivo Digital de Investigação em Numismática Medieval Portuguesa</p>
+      </div>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <a href="../../index.html">Início</a>
+        <a href="../../indice-analitico.html">Índice Analítico</a>
+        <a href="../../categorias/index.html">Categorias</a>
+        <a href="../../arquivo/index.html">Arquivo</a>
+        <a href="../../sobre.html">Sobre</a>
+      </nav>
+      <div class="search-box" role="search">
+        <label for="search-input" class="visually-hidden">Pesquisar</label>
+        <input type="search" id="search-input" placeholder="Pesquisar publicações…" autocomplete="off">
+        <div id="search-results" class="search-results" hidden></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="Índice por categorias">
+      <h2 class="sidebar-titulo">Categorias</h2>
+      <nav class="sidebar-nav" id="sidebar-categorias">
+        <ul class="categoria-lista">
+          <li>
+            <a href="../../categorias/index.html" class="categoria-link categoria-link--todas">
+              <span class="categoria-nome">Todas as Categorias</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="../../categorias/fundacao-da-nacionalidade/index.html" class="categoria-link" data-categoria-slug="fundacao-da-nacionalidade">
+              <span class="categoria-nome">Fundação da Nacionalidade</span>
+              <span class="categoria-contagem">5</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="../../categorias/d-afonso-henriques/index.html" class="categoria-link" data-categoria-slug="d-afonso-henriques">
+              <span class="categoria-nome">D. Afonso Henriques</span>
+              <span class="categoria-contagem">19</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="../../categorias/d-sancho-i/index.html" class="categoria-link is-empty" data-categoria-slug="d-sancho-i">
+              <span class="categoria-nome">D. Sancho I</span>
+              <span class="categoria-contagem">0</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="../../categorias/d-afonso-ii/index.html" class="categoria-link is-empty" data-categoria-slug="d-afonso-ii">
+              <span class="categoria-nome">D. Afonso II</span>
+              <span class="categoria-contagem">0</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="../../categorias/d-sancho-ii/index.html" class="categoria-link is-empty" data-categoria-slug="d-sancho-ii">
+              <span class="categoria-nome">D. Sancho II</span>
+              <span class="categoria-contagem">0</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="../../categorias/d-afonso-iii/index.html" class="categoria-link" data-categoria-slug="d-afonso-iii">
+              <span class="categoria-nome">D. Afonso III</span>
+              <span class="categoria-contagem">1</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="../../categorias/d-dinis/index.html" class="categoria-link" data-categoria-slug="d-dinis">
+              <span class="categoria-nome">D. Dinis</span>
+              <span class="categoria-contagem">2</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="../../categorias/d-afonso-iv/index.html" class="categoria-link" data-categoria-slug="d-afonso-iv">
+              <span class="categoria-nome">D. Afonso IV</span>
+              <span class="categoria-contagem">4</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="../../categorias/d-pedro-i/index.html" class="categoria-link is-empty" data-categoria-slug="d-pedro-i">
+              <span class="categoria-nome">D. Pedro I</span>
+              <span class="categoria-contagem">0</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="../../categorias/d-fernando-i/index.html" class="categoria-link" data-categoria-slug="d-fernando-i">
+              <span class="categoria-nome">D. Fernando I</span>
+              <span class="categoria-contagem">4</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="../../categorias/d-joao-i/index.html" class="categoria-link" data-categoria-slug="d-joao-i">
+              <span class="categoria-nome">D. João I</span>
+              <span class="categoria-contagem">8</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="../../categorias/d-duarte/index.html" class="categoria-link is-empty" data-categoria-slug="d-duarte">
+              <span class="categoria-nome">D. Duarte</span>
+              <span class="categoria-contagem">0</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="../../categorias/d-afonso-v/index.html" class="categoria-link" data-categoria-slug="d-afonso-v">
+              <span class="categoria-nome">D. Afonso V</span>
+              <span class="categoria-contagem">9</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="../../categorias/d-joao-ii/index.html" class="categoria-link" data-categoria-slug="d-joao-ii">
+              <span class="categoria-nome">D. João II</span>
+              <span class="categoria-contagem">12</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="../../categorias/d-manuel-i/index.html" class="categoria-link" data-categoria-slug="d-manuel-i">
+              <span class="categoria-nome">D. Manuel I</span>
+              <span class="categoria-contagem">2</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="../../categorias/falsificacoes/index.html" class="categoria-link" data-categoria-slug="falsificacoes">
+              <span class="categoria-nome">Falsificações</span>
+              <span class="categoria-contagem">49</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="../../categorias/restauros/index.html" class="categoria-link is-active" data-categoria-slug="restauros">
+              <span class="categoria-nome">Restauros</span>
+              <span class="categoria-contagem">29</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="../../categorias/moedas-estrangeiras/index.html" class="categoria-link" data-categoria-slug="moedas-estrangeiras">
+              <span class="categoria-nome">Moedas Estrangeiras</span>
+              <span class="categoria-contagem">65</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="../../categorias/iconografia-religiosa/index.html" class="categoria-link" data-categoria-slug="iconografia-religiosa">
+              <span class="categoria-nome">Iconografia Religiosa</span>
+              <span class="categoria-contagem">45</span>
+            </a>
+          </li>
+          
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="site-main">
+      
+<header class="pagina-cabecalho">
+  <p class="pagina-etiqueta">Categoria</p>
+  <h1 class="pagina-titulo">Restauros</h1>
+  <p class="pagina-contagem">29 publicações</p>
+</header>
+
+
+<div class="pub-grid">
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2026-06-19-025659-0015.html">
+    
+    <div class="pub-card-media">
+      <img src="../../imagens/981940347985804.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jun 19, 2026 2:56:59 da manhã">19 de junho de 2026</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">OS CUNHOS QUE ESTÃO EM CIMA SÃO IGUAIS AOS QUE ESTÃO EM BAIXO?</h3>
+      
+      
+      <p class="pub-card-excerto">OS CUNHOS QUE ESTÃO EM CIMA SÃO IGUAIS AOS QUE ESTÃO EM BAIXO? Dois tostões de D. António do primeiro lavramento de Angra. A moeda de cima vai à praça por €9.000,00, no leilão 13 da Filmoedas. A de baixo, segundo certas…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2026-06-08-000131-0021.html">
+    
+    <div class="pub-card-media">
+      <img src="../../imagens/972567275589778.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jun 08, 2026 12:01:31 da manhã">8 de junho de 2026</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">UM MORABITINO (NOVO)</h3>
+      
+      
+      <p class="pub-card-excerto">UM MORABITINO (NOVO) A Portuscalle Numismática apresenta a leilão um morabitino cujos cunhos, quer de anverso, quer de reverso, são uma absoluta novidade. Não se refere a proveniência da peça. Concomitantemente, nesse…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2026-05-29-230516-0022.html">
+    
+    <div class="pub-card-media">
+      <img src="../../imagens/964545946391911.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Mai 29, 2026 11:05:16 da tarde">29 de maio de 2026</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">A ALMA E A MATÉRIA</h3>
+      
+      
+      <p class="pub-card-excerto">A ALMA E A MATÉRIA Rotação, simetria, dualismo, três dedos, a luz e as trevas &#34;Na verdade, quando o Senhor Jesus misericordiosamente consignou o mundo para a restauração do género humano, procedendo do Pai, veio ao…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2026-05-05-044948-0041.html">
+    
+    <div class="pub-card-media">
+      <img src="../../imagens/943927421787097.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Mai 05, 2026 4:49:48 da manhã">5 de maio de 2026</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">RESTAURO NOTÓRIO</h3>
+      
+      
+      <p class="pub-card-excerto">RESTAURO NOTÓRIO Nos círculos da maior intelectualidade numismática talvez se discuta a necessidade de deixar as marcas do restauro bem visíveis, com a aposição de estrias multidireccionais um pouco por todo o lado.…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2026-05-03-214904-0045.html">
+    
+    <div class="pub-card-media">
+      <img src="../../imagens/942945205218652.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Mai 03, 2026 9:49:04 da tarde">3 de maio de 2026</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">RESTAUROS PERIGOSOS</h3>
+      
+      
+      <p class="pub-card-excerto">RESTAUROS PERIGOSOS Na imagem podem ver o lote 327 do próximo leilão da Portuscalle Numismática (acima) e a moeda que ilustra a referência no catálogo VMA (abaixo). Este é um bom exemplo de como diferenciar visualmente…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2026-04-29-221440-0049.html">
+    
+    <div class="pub-card-media">
+      <img src="../../imagens/939702312209608.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Abr 29, 2026 10:14:40 da tarde">29 de abril de 2026</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">PARA QUE SERVE O RESTAURO?</h3>
+      
+      
+      <p class="pub-card-excerto">PARA QUE SERVE O RESTAURO? Isto que a Portuscalle Numismática vai levar à PINF é tradição de qualidade a mais para os meus olhos. Não consigo andar para a frente no catálogo. São umas atrás das outras. O padrão de…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2026-04-29-215424-0050.html">
+    
+    <div class="pub-card-media">
+      <img src="../../imagens/939691605544012.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Abr 29, 2026 9:54:24 da tarde">29 de abril de 2026</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">DEIXEM AS MOEDAS VIVER EM LIBERDADE</h3>
+      
+      
+      <p class="pub-card-excerto">DEIXEM AS MOEDAS VIVER EM LIBERDADE No fundo, com o restauro, impõe-se uma ou várias vontades sobre um disco de metal, deformando-o a gosto para a posteridade. Até a olhos menos avisados, o &#34;T&#34; do anverso e o do reverso…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2026-04-29-212632-0051.html">
+    
+    <div class="pub-card-media">
+      <img src="../../imagens/939669942212845.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Abr 29, 2026 9:26:32 da tarde">29 de abril de 2026</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">EMAGRECIMENTO DO MONETÁRIO</h3>
+      
+      
+      <p class="pub-card-excerto">EMAGRECIMENTO DO MONETÁRIO Estou há dois dias a olhar para este meio vintém de D. João III e a tentar perceber o que se passou. Quer tenha sido restauro, quer tenha sido limpeza, parece-me que apenas cumpriu objectivos…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2026-04-27-221529-0052.html">
+    
+    <div class="pub-card-media">
+      <img src="../../imagens/938066935706479.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Abr 27, 2026 10:15:29 da tarde">27 de abril de 2026</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">À ATENÇÃO DOS &#34;RESTAURADORES&#34; DE MOEDAS</h3>
+      
+      
+      <p class="pub-card-excerto">À ATENÇÃO DOS &#34;RESTAURADORES&#34; DE MOEDAS Aquando do uso do cinzel, não invadir a bordadura do escudo, cujo aspecto se deverá conservar semelhante àquele que resulta da martelada do cunho no disco, posterior ao que…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2026-04-26-151703-0053.html">
+    
+    <div class="pub-card-media">
+      <img src="../../imagens/936943659152140.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Abr 26, 2026 3:17:03 da tarde">26 de abril de 2026</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      
+      <p class="pub-card-excerto">1,04g de CEITIL No 147 sai um disco sebastiânico. À volta das letras e do castelo e dos elementos do escudo, sobrou algum cobre, que se quantifica. As letras parecem todas diferentes. Se calhar tentaram restaurá-lo. Ao…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2026-04-14-204137-0057.html">
+    
+    <div class="pub-card-media">
+      <img src="../../imagens/927597413420098.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Abr 14, 2026 8:41:37 da tarde">14 de abril de 2026</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">&#34;RESTAUROS BEM FEITOS&#34;</h3>
+      
+      
+      <p class="pub-card-excerto">&#34;RESTAUROS BEM FEITOS&#34; O dono do Império (não confundir com o imperador) foi um dos numismatas a quem sempre ouvi a defesa dos &#34;restauros bem feitos&#34;. O problema dos restauros é que acabam por tirar toda a credibilidade…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2026-03-26-005820-0067.html">
+    
+    <div class="pub-card-media">
+      <img src="../../imagens/912169198296253.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Mar 26, 2026 12:58:20 da manhã">26 de março de 2026</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">A VALORIZAÇÃO DO OURO</h3>
+      
+      
+      <p class="pub-card-excerto">A VALORIZAÇÃO DO OURO Conhecia apenas dois exemplares do cruzado do calvário &#34;P-R&#34; de D. João III , sendo que a melhor referência é a moeda do Museu do Rio, sem qualquer restauro. O exemplar do BES (ex. Carlos Costa)…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2025-10-31-115317-0126.html">
+    
+    <div class="pub-card-media">
+      <img src="../../imagens/799370202909487.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Out 31, 2025 11:53:17 da manhã">31 de outubro de 2025</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">O OURO E OS RESTAUROS</h3>
+      
+      
+      <p class="pub-card-excerto">O OURO E OS RESTAUROS A moeda de baixo vai à praça por 250.000 coroas norueguesas, cerca de 21.500 euros. É um português de D. João III, acompanhado da referência &#34;some tooling&#34; (algum restauro). No segundo volume das…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2025-09-04-134853-0140.html">
+    
+    <div class="pub-card-media">
+      <img src="../../imagens/752224614290713.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Set 04, 2025 1:48:53 da tarde">4 de setembro de 2025</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">RESTAUROS MUITO FÁCEIS DE DETECTAR</h3>
+      
+      
+      <p class="pub-card-excerto">RESTAUROS MUITO FÁCEIS DE DETECTAR Esta moeda foi posta recentemente à venda, sob o epíteto de linda, bela, rara e quejandos. É daquelas peças em que não é sequer preciso comparar as letras para perceber que foi toda…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2025-04-24-041051-0159.html">
+    
+    <div class="pub-card-media">
+      <img src="../../imagens/651128497733659.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Abr 24, 2025 4:10:51 da manhã">24 de abril de 2025</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">JOSIX - O INTELECTUAL</h3>
+      
+      
+      <p class="pub-card-excerto">JOSIX - O INTELECTUAL Interrompo o suspense Afonsino, que será retomado em breve, para dar nota de um texto de um senhor que tem andado pelos fóruns a debitar disparate atrás de disparate, com laivos de eloquência de…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2024-08-24-131443-0244.html">
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Ago 24, 2024 1:14:43 da tarde">24 de agosto de 2024</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      
+      <p class="pub-card-excerto">Tem-se feito boa história monetária do período moderno português no Brasil. Já conhecia o estudo sobre a restauração e li hoje o artigo relativo a D. António e aos Filipes. A sorte de Portugal é a lusofonia. Ler no…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2024-07-27-104416-0251.html">
+    
+    <div class="pub-card-media">
+      <img src="../../imagens/459446983568479.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jul 27, 2024 10:44:16 da manhã">27 de julho de 2024</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      
+      <p class="pub-card-excerto">Aquela estrela junto à espada tem muita importância iconográfica. Vilipendiá-la é um acto vistoso, que até pode gerar cunhos desconhecidos. Há quem vá mais longe e diga que é extremely fine. O filósofo do enchido…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2024-06-19-193418-0289.html">
+    
+    <div class="pub-card-media">
+      <img src="../../imagens/436314102548434.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jun 19, 2024 7:34:18 da tarde">19 de junho de 2024</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      
+      <p class="pub-card-excerto">O justos e os espadins foram inicialmente lavrados para serem enviados numa embaixada ao papa, ocorrida em 1485. Essa embaixada era decisiva para o futuro do país. Não só se procurava justificar a &#34;limpeza social&#34;…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2024-06-11-035013-0300.html">
+    
+    <div class="pub-card-media">
+      <img src="../../imagens/431082493071595.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jun 11, 2024 3:50:13 da manhã">11 de junho de 2024</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      
+      <p class="pub-card-excerto">Andava aqui de volta de uns catálogos e encontrei esta preciosidade do ano passado, com três lotes levados à praça no mesmo leilão. Suponho que se traduza assim: Com penteado discreto-300 euros Sem penteado-0 euros Com…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2024-06-04-040839-0305.html">
+    
+    <div class="pub-card-media">
+      <img src="../../imagens/426842523495592.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jun 04, 2024 4:08:39 da manhã">4 de junho de 2024</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      
+      <p class="pub-card-excerto">A moeda da esquerda foi posta no mercado pelo sr. José Almeida. Classificada como MBC, sem qualquer menção adicional para lá do preço. É aplaudida pelos correlegionários. O coração do sr. Alberto Praça e o polegar do…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2024-05-31-225903-0306.html">
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Mai 31, 2024 10:59:03 da tarde">31 de maio de 2024</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      
+      <p class="pub-card-excerto">Tenho visto por aí a apologia da não limpeza das moedas, vulgarizada e hasteada em bandeiras ocas e desprovidas de reflexão prévia. Há já até quem teça elogios a moedas, epitetando-as de virgens, só e apenas porque…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2023-12-17-220823-0317.html">
+    
+    <div class="pub-card-media">
+      <img src="../../imagens/325525750293937.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Dez 17, 2023 10:08:23 da tarde">17 de dezembro de 2023</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      
+      <p class="pub-card-excerto">Às vezes fica-se a olhar para uma moeda algum tempo. Ora porque nos deslumbra, ora porque alguma coisa, à primeira vista, não bate certo. Neste dinheiro salta à vista o contraste entre o estado de conservação dos…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2023-10-21-205043-0321.html">
+    
+    <div class="pub-card-media">
+      <img src="../../imagens/294360836743762.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Out 21, 2023 8:50:43 da tarde">21 de outubro de 2023</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      
+      <p class="pub-card-excerto">De entre as peças portuguesas que foram registadas no Portable Antiquities Scheme no último ano, esta foi a que mais me chamou a atenção. O registo é de Janeiro de 2023 e o local do achado é na região de Londres.…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2023-10-11-192633-0327.html">
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Out 11, 2023 7:26:33 da tarde">11 de outubro de 2023</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      
+      <p class="pub-card-excerto">Timidamente, a notícia sobre a detenção de Richard Beale ( british auctioneer coin sale fraud new york richard beale ) foi divulgada em Portugal, nomeadamente no Fórum dos Numismatas. Do que não se fala, sendo isso uma…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2022-10-24-192948-0338.html">
+    
+    <div class="pub-card-media">
+      <img src="../../imagens/126447713535076.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Out 24, 2022 7:29:48 da tarde">24 de outubro de 2022</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      
+      <p class="pub-card-excerto">Visitar theportugalnews.com Já foi vendido o português de D. Manuel encontrado em Inglaterra, cujo achado foi amplamente noticiado. €18.000, para um comprador do Japão. Dizem os especialistas que a marca de cambista…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2022-10-22-175817-0341.html">
+    
+    <div class="pub-card-media">
+      <img src="../../imagens/125844880262026.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Out 22, 2022 5:58:17 da tarde">22 de outubro de 2022</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      
+      <p class="pub-card-excerto">Fui parar ao catálogo da Numista por acaso e dei com uma série de fotos que merecem ser analisadas. Não é só a questão do evidente mau gosto do &#34;restauro digital&#34;, mas sobretudo a vandalização do estilo, que me faz…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2022-10-12-141209-0345.html">
+    
+    <div class="pub-card-media">
+      <img src="../../imagens/122817397231441.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Out 12, 2022 2:12:09 da tarde">12 de outubro de 2022</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      
+      <p class="pub-card-excerto">Esta moeda saiu na numismática leilões há cerca de uma semana. Entretanto tenho sido inundado de mensagens a perguntarem-me se é uma boa moeda. E até já se levantam hipóteses de ser falsa de época. Para que conste, a…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2022-09-21-211913-0361.html">
+    
+    <div class="pub-card-media">
+      <img src="../../imagens/116752801171234.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Set 21, 2022 9:19:13 da tarde">21 de setembro de 2022</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      
+      <p class="pub-card-excerto">Já tinha publicado esta foto há uns anos, com algumas limpezas que fiz. Julgo que seja pedagógica. A ideia enraizada na tradição de qualidade dos numismatas é a de que as moedas não se limpam. Diz-se a frase em tom…</p>
+      
+    </div>
+  </a>
+</article>
+  
+  <article class="pub-card">
+  <a class="pub-card-link" href="../../artigos/2022-08-30-011419-0408.html">
+    
+    <div class="pub-card-media">
+      <img src="../../imagens/104841999028981.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Ago 30, 2022 1:14:19 da manhã">30 de agosto de 2022</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      
+      <p class="pub-card-excerto">&#34;Por estes dias, uma moeda portuguesa medieval viu a luz do sol num quintal do centro histórico de Alvalade, sabe-se lá há quantos séculos soterrada… Trata-se, aparentemente, de um grave ou ‘bolhão’ (14 dinheiros) de D.…</p>
+      
+    </div>
+  </a>
+</article>
+  
+</div>
+
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Resistência Numismática — Arquivo Digital de Investigação em Numismática Medieval Portuguesa.</p>
+      <p>
+        <a href="../../indice-analitico.html">Índice Analítico</a> ·
+        <a href="../../categorias/index.html">Categorias</a> ·
+        <a href="../../feed.xml">RSS</a> ·
+        <a href="../../sobre.html">Sobre</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../js/search.js" defer></script>
+  <script src="../../js/categorias.js" defer></script>
+  
+</body>
+</html>

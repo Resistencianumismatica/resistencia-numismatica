@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resistência Numismática</title>
+  <meta name="description" content="Arquivo Digital de Investigação em Numismática Medieval Portuguesa — estudos, análises e publicações científicas.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="Resistência Numismática" href="feed.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-brand">
+        <p class="site-masthead"><a href="index.html">Resistência Numismática</a></p>
+        <p class="site-subtitle">Arquivo Digital de Investigação em Numismática Medieval Portuguesa</p>
+      </div>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="indice-analitico.html">Índice Analítico</a>
+        <a href="categorias/index.html">Categorias</a>
+        <a href="arquivo/index.html">Arquivo</a>
+        <a href="sobre.html">Sobre</a>
+      </nav>
+      <div class="search-box" role="search">
+        <label for="search-input" class="visually-hidden">Pesquisar</label>
+        <input type="search" id="search-input" placeholder="Pesquisar publicações…" autocomplete="off">
+        <div id="search-results" class="search-results" hidden></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="Índice por categorias">
+      <h2 class="sidebar-titulo">Categorias</h2>
+      <nav class="sidebar-nav" id="sidebar-categorias">
+        <ul class="categoria-lista">
+          <li>
+            <a href="categorias/index.html" class="categoria-link categoria-link--todas">
+              <span class="categoria-nome">Todas as Categorias</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="categorias/fundacao-da-nacionalidade/index.html" class="categoria-link" data-categoria-slug="fundacao-da-nacionalidade">
+              <span class="categoria-nome">Fundação da Nacionalidade</span>
+              <span class="categoria-contagem">5</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="categorias/d-afonso-henriques/index.html" class="categoria-link" data-categoria-slug="d-afonso-henriques">
+              <span class="categoria-nome">D. Afonso Henriques</span>
+              <span class="categoria-contagem">19</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="categorias/d-sancho-i/index.html" class="categoria-link is-empty" data-categoria-slug="d-sancho-i">
+              <span class="categoria-nome">D. Sancho I</span>
+              <span class="categoria-contagem">0</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="categorias/d-afonso-ii/index.html" class="categoria-link is-empty" data-categoria-slug="d-afonso-ii">
+              <span class="categoria-nome">D. Afonso II</span>
+              <span class="categoria-contagem">0</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="categorias/d-sancho-ii/index.html" class="categoria-link is-empty" data-categoria-slug="d-sancho-ii">
+              <span class="categoria-nome">D. Sancho II</span>
+              <span class="categoria-contagem">0</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="categorias/d-afonso-iii/index.html" class="categoria-link" data-categoria-slug="d-afonso-iii">
+              <span class="categoria-nome">D. Afonso III</span>
+              <span class="categoria-contagem">1</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="categorias/d-dinis/index.html" class="categoria-link" data-categoria-slug="d-dinis">
+              <span class="categoria-nome">D. Dinis</span>
+              <span class="categoria-contagem">2</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="categorias/d-afonso-iv/index.html" class="categoria-link" data-categoria-slug="d-afonso-iv">
+              <span class="categoria-nome">D. Afonso IV</span>
+              <span class="categoria-contagem">4</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="categorias/d-pedro-i/index.html" class="categoria-link is-empty" data-categoria-slug="d-pedro-i">
+              <span class="categoria-nome">D. Pedro I</span>
+              <span class="categoria-contagem">0</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="categorias/d-fernando-i/index.html" class="categoria-link" data-categoria-slug="d-fernando-i">
+              <span class="categoria-nome">D. Fernando I</span>
+              <span class="categoria-contagem">4</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="categorias/d-joao-i/index.html" class="categoria-link" data-categoria-slug="d-joao-i">
+              <span class="categoria-nome">D. João I</span>
+              <span class="categoria-contagem">8</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="categorias/d-duarte/index.html" class="categoria-link is-empty" data-categoria-slug="d-duarte">
+              <span class="categoria-nome">D. Duarte</span>
+              <span class="categoria-contagem">0</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="categorias/d-afonso-v/index.html" class="categoria-link" data-categoria-slug="d-afonso-v">
+              <span class="categoria-nome">D. Afonso V</span>
+              <span class="categoria-contagem">9</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="categorias/d-joao-ii/index.html" class="categoria-link" data-categoria-slug="d-joao-ii">
+              <span class="categoria-nome">D. João II</span>
+              <span class="categoria-contagem">12</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="categorias/d-manuel-i/index.html" class="categoria-link" data-categoria-slug="d-manuel-i">
+              <span class="categoria-nome">D. Manuel I</span>
+              <span class="categoria-contagem">2</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="categorias/falsificacoes/index.html" class="categoria-link" data-categoria-slug="falsificacoes">
+              <span class="categoria-nome">Falsificações</span>
+              <span class="categoria-contagem">49</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="categorias/restauros/index.html" class="categoria-link" data-categoria-slug="restauros">
+              <span class="categoria-nome">Restauros</span>
+              <span class="categoria-contagem">29</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="categorias/moedas-estrangeiras/index.html" class="categoria-link" data-categoria-slug="moedas-estrangeiras">
+              <span class="categoria-nome">Moedas Estrangeiras</span>
+              <span class="categoria-contagem">65</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="categorias/iconografia-religiosa/index.html" class="categoria-link" data-categoria-slug="iconografia-religiosa">
+              <span class="categoria-nome">Iconografia Religiosa</span>
+              <span class="categoria-contagem">45</span>
+            </a>
+          </li>
+          
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="site-main">
+      
+
+<section class="capa" aria-label="Capa do arquivo">
+  <figure class="capa-figura">
+    <img class="capa-imagem" src="imagens/capa.png" alt="" width="1200" height="500">
+  </figure>
+</section>
+
+
+<header class="portal-identidade">
+  <p class="portal-etiqueta">Arquivo digital</p>
+  <h1 class="portal-titulo">Resistência Numismática</h1>
+  <p class="portal-subtitulo">Arquivo Digital de Investigação em Numismática Medieval Portuguesa</p>
+  <p class="portal-contagem">420 publicações no arquivo</p>
+</header>
+
+<section class="secao-publicacoes">
+  <h2 class="secao-titulo">Publicações recentes</h2>
+  <div class="pub-grid">
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-07-11-102826-0000.html">
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jul 11, 2026 10:28:26 da manhã">11 de julho de 2026</time>
+        
+        <span class="pub-card-cat">Iconografia Religiosa</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">A ÁRVORE DA VIDA NA HERÁLDICA</h3>
+      
+      
+      <p class="pub-card-excerto">A ÁRVORE DA VIDA NA HERÁLDICA Esta duas matrizes sigilares, retiradas de &#34;Selos Medievais Portugueses&#34;, Pedro Sameiro, 2002, são identificadas pelos heraldistas, uma, como tendo uma palmeira com duas aves afrontadas na…</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-07-10-141149-0001.html">
+    
+    <div class="pub-card-media">
+      <img src="imagens/1000339462812559.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jul 10, 2026 2:11:49 da tarde">10 de julho de 2026</time>
+        
+        <span class="pub-card-cat">D. João I</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">OS ÚLTIMOS DINHEIROS PORTUGUESES</h3>
+      
+      
+      <p class="pub-card-excerto">OS ÚLTIMOS DINHEIROS PORTUGUESES Dei com um artigo que me parece relevante para o estudo da circulação monetária do início do século XV. Já conhecia achados com esta composição vindos do detectorismo, mas este é…</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-07-06-112434-0002.html">
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jul 06, 2026 11:24:34 da manhã">6 de julho de 2026</time>
+        
+        <span class="pub-card-cat">D. Afonso Henriques</span>
+        
+      </div>
+      
+      
+      <p class="pub-card-excerto">UM DINHEIRO DE D AFONSO HENRIQUES</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-07-06-112434-0003.html">
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jul 06, 2026 11:24:34 da manhã">6 de julho de 2026</time>
+        
+        <span class="pub-card-cat">D. Afonso Henriques</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">À MEMÓRIA DE AGOSTINHO FERREIRA GAMBETTA</h3>
+      
+      
+      <p class="pub-card-excerto">À MEMÓRIA DE AGOSTINHO FERREIRA GAMBETTA UM DINHEIRO DE D AFONSO HENRIQUES</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-07-05-152454-0004.html">
+    
+    <div class="pub-card-media">
+      <img src="imagens/996150493231456.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jul 05, 2026 3:24:54 da tarde">5 de julho de 2026</time>
+        
+        <span class="pub-card-cat">Iconografia Religiosa</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">SABE-SE QUE ESTALINE</h3>
+      
+      
+      <p class="pub-card-excerto">SABE-SE QUE ESTALINE Da leitura do último número da revista Medievalista, ficou-me na retina uma frase: &#34;Sabe-se que Estaline mandou apagar, de todas as fotos, a imagem de Trotsky.&#34;. No artigo com maior interesse para a…</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-07-04-190147-0005.html">
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jul 04, 2026 7:01:47 da tarde">4 de julho de 2026</time>
+        
+        <span class="pub-card-cat">D. Afonso Henriques</span>
+        
+      </div>
+      
+      
+      <p class="pub-card-excerto">DE SALOMÃO A AFONSO HENRIQUES</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-07-04-190147-0006.html">
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jul 04, 2026 7:01:47 da tarde">4 de julho de 2026</time>
+        
+        <span class="pub-card-cat">D. Afonso Henriques</span>
+        
+      </div>
+      
+      
+      <p class="pub-card-excerto">SUPERSTIÇÃO OU SABEDORIA? (Shadow ban) DE SALOMÃO A AFONSO HENRIQUES</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-07-04-012934-0007.html">
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jul 04, 2026 1:29:34 da manhã">4 de julho de 2026</time>
+        
+        <span class="pub-card-cat">Iconografia Religiosa</span>
+        
+      </div>
+      
+      
+      <p class="pub-card-excerto">EVIDÊNCIAS TEMPORÃS DA PRESENÇA DO SANTO LENHO NO REINO E NO CONDADO PORTUCALENSE</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-07-04-012934-0008.html">
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jul 04, 2026 1:29:34 da manhã">4 de julho de 2026</time>
+        
+        <span class="pub-card-cat">Iconografia Religiosa</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">A INQUISIÇÃO DOMINICANA</h3>
+      
+      
+      <p class="pub-card-excerto">A INQUISIÇÃO DOMINICANA Hoje estava a ler um artigo da deputada Isabel Moreira, que revelava uma certa angústia pelo perigo iminente do desaparecimento da democracia. Acho graça a estas coisas. Às causas e ao modo como…</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-07-03-052941-0009.html">
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jul 03, 2026 5:29:41 da manhã">3 de julho de 2026</time>
+        
+        <span class="pub-card-cat">Fundação da Nacionalidade</span>
+        
+      </div>
+      
+      
+      <p class="pub-card-excerto">MEALHAS DA PRIMEIRA DINASTIA</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-07-03-052941-0010.html">
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jul 03, 2026 5:29:41 da manhã">3 de julho de 2026</time>
+        
+        <span class="pub-card-cat">Fundação da Nacionalidade</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">CANCEL CULTURE #2</h3>
+      
+      
+      <p class="pub-card-excerto">CANCEL CULTURE #2 MEALHAS DA PRIMEIRA DINASTIA</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-07-02-111349-0011.html">
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jul 02, 2026 11:13:49 da manhã">2 de julho de 2026</time>
+        
+        <span class="pub-card-cat">D. Afonso Henriques</span>
+        
+      </div>
+      
+      
+      <p class="pub-card-excerto">AS EMISSÕES EXTRAVAGANTES DE D AFONSO HENRIQUES</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-07-02-111349-0012.html">
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jul 02, 2026 11:13:49 da manhã">2 de julho de 2026</time>
+        
+        <span class="pub-card-cat">Moedas Estrangeiras</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">JEAN-JACQUES DEPOIS DE 62</h3>
+      
+      
+      <p class="pub-card-excerto">JEAN-JACQUES DEPOIS DE 62 Faz hoje precisamente 248 anos que morreu Rousseau. A revolução francesa viria a dar-se em 89, 11 anos depois de quem a teorizou ter morrido no maior dos isolamentos. Quest-ce-que la…</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-06-21-052440-0013.html">
+    
+    <div class="pub-card-media">
+      <img src="imagens/983680321145140.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jun 21, 2026 5:24:40 da manhã">21 de junho de 2026</time>
+        
+        <span class="pub-card-cat">Moedas Estrangeiras</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">O SOL E A LUA</h3>
+      
+      
+      <p class="pub-card-excerto">O SOL E A LUA Um peso monetário grego, feito na Ática. Museu de São Raimundo, Toulouse.</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-06-20-050622-0014.html">
+    
+    <div class="pub-card-media">
+      <img src="imagens/982904121222760.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jun 20, 2026 5:06:22 da manhã">20 de junho de 2026</time>
+        
+        <span class="pub-card-cat">Falsificações</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">CRUZADO DA MULA RUSSA</h3>
+      
+      
+      <p class="pub-card-excerto">CRUZADO DA MULA RUSSA No dia 17 de Junho, às 17:19h, num grupo do facebook, a propósito de um vintém que qualquer numismata que se preze já sabe que é falsificado há muitos anos, ocorreu-me alertar para um cruzado de D.…</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-06-19-025659-0015.html">
+    
+    <div class="pub-card-media">
+      <img src="imagens/981940347985804.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jun 19, 2026 2:56:59 da manhã">19 de junho de 2026</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">OS CUNHOS QUE ESTÃO EM CIMA SÃO IGUAIS AOS QUE ESTÃO EM BAIXO?</h3>
+      
+      
+      <p class="pub-card-excerto">OS CUNHOS QUE ESTÃO EM CIMA SÃO IGUAIS AOS QUE ESTÃO EM BAIXO? Dois tostões de D. António do primeiro lavramento de Angra. A moeda de cima vai à praça por €9.000,00, no leilão 13 da Filmoedas. A de baixo, segundo certas…</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-06-17-194331-0016.html">
+    
+    <div class="pub-card-media">
+      <img src="imagens/980899108089928.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jun 17, 2026 7:43:31 da tarde">17 de junho de 2026</time>
+        
+        <span class="pub-card-cat">Iconografia Religiosa</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">IN HOC SIGNO VINCES</h3>
+      
+      
+      <p class="pub-card-excerto">IN HOC SIGNO VINCES Numa placa do Tríptico de Stavelot, produzido no século XII, no País Mosano, e hoje na colecção da Morgan Library, pode-se ver uma representação do sonho de Constantino que, como se demonstra, seria…</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-06-16-153449-0017.html">
+    
+    <div class="pub-card-media">
+      <img src="imagens/979875088192330.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jun 16, 2026 3:34:49 da tarde">16 de junho de 2026</time>
+        
+        <span class="pub-card-cat">D. Afonso Henriques</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">DINHEIRO DO FUNDADOR A LEILÃO</h3>
+      
+      
+      <p class="pub-card-excerto">DINHEIRO DO FUNDADOR A LEILÃO O leilão 13 da Filmoedas, que terá lugar em 25 de Junho de 2026, abre com um dinheiro de D. Afonso Henriques, cuja foto esteve durante muitos anos alojada no blog &#34;Dinheiros&#34;, como…</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-06-10-054247-0018.html">
+    
+    <div class="pub-card-media">
+      <img src="imagens/974431968736642.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jun 10, 2026 5:42:47 da manhã">10 de junho de 2026</time>
+        
+        <span class="pub-card-cat">Moedas Estrangeiras</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">AS CERTIFICAÇÕES DA CUNHAGEM MANUAL PORTUGUESA</h3>
+      
+      
+      <p class="pub-card-excerto">AS CERTIFICAÇÕES DA CUNHAGEM MANUAL PORTUGUESA A Numismática Diamantino é uma das poucas casas de numismática pela qual ainda tenho algum respeito. São especialistas em cunhagem mecânica, com catálogo editado todos os…</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-06-08-232215-0019.html">
+    
+    <div class="pub-card-media">
+      <img src="imagens/976527235193782.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jun 08, 2026 11:22:15 da tarde">8 de junho de 2026</time>
+        
+        <span class="pub-card-cat">Falsificações</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">EMPREENDEDORISMO NO DIA DE SANTO ANTÓNIO</h3>
+      
+      
+      <p class="pub-card-excerto">EMPREENDEDORISMO NO DIA DE SANTO ANTÓNIO Império Numis Leu Numismatik Escrevi um artigo sobre estas moedas há uns tempos, que submeti a publicação na Revista Moeda e que foi rejeitado. A verdade é que, se submeto textos…</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-06-08-230850-0020.html">
+    
+    <div class="pub-card-media">
+      <img src="imagens/973386998841139.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jun 08, 2026 11:08:50 da tarde">8 de junho de 2026</time>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">DECOURO OU DE BORRACHA?</h3>
+      
+      
+      <p class="pub-card-excerto">DECOURO OU DE BORRACHA? O confronto da lírica provençal de VMA, com o realismo mágico de DRENG.</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-06-08-000131-0021.html">
+    
+    <div class="pub-card-media">
+      <img src="imagens/972567275589778.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Jun 08, 2026 12:01:31 da manhã">8 de junho de 2026</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">UM MORABITINO (NOVO)</h3>
+      
+      
+      <p class="pub-card-excerto">UM MORABITINO (NOVO) A Portuscalle Numismática apresenta a leilão um morabitino cujos cunhos, quer de anverso, quer de reverso, são uma absoluta novidade. Não se refere a proveniência da peça. Concomitantemente, nesse…</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-05-29-230516-0022.html">
+    
+    <div class="pub-card-media">
+      <img src="imagens/964545946391911.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Mai 29, 2026 11:05:16 da tarde">29 de maio de 2026</time>
+        
+        <span class="pub-card-cat">Restauros</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">A ALMA E A MATÉRIA</h3>
+      
+      
+      <p class="pub-card-excerto">A ALMA E A MATÉRIA Rotação, simetria, dualismo, três dedos, a luz e as trevas &#34;Na verdade, quando o Senhor Jesus misericordiosamente consignou o mundo para a restauração do género humano, procedendo do Pai, veio ao…</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-05-29-215305-0023.html">
+    
+    <div class="pub-card-media">
+      <img src="imagens/964521369727702.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Mai 29, 2026 9:53:05 da tarde">29 de maio de 2026</time>
+        
+        <span class="pub-card-cat">Iconografia Religiosa</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">NUMEROLOGIA E PAREIDOLIA</h3>
+      
+      
+      <p class="pub-card-excerto">NUMEROLOGIA E PAREIDOLIA &#34;Isto também se colige do que foi dito antes, quando se diz: o poste ereto tinha o tronco colocado por baixo, e o título colocado por cima, pondo o tronquinho em baixo e o título em cima, no…</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-05-27-225610-0024.html">
+    
+    <div class="pub-card-media">
+      <img src="imagens/962855626560943.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Mai 27, 2026 10:56:10 da tarde">27 de maio de 2026</time>
+        
+        <span class="pub-card-cat">Iconografia Religiosa</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">O QUE ESTÁ EM CIMA É IGUAL AO QUE ESTÁ EM BAIXO</h3>
+      
+      
+      <p class="pub-card-excerto">O QUE ESTÁ EM CIMA É IGUAL AO QUE ESTÁ EM BAIXO No foral de Proença, produzido em 1218 (PT-TT-GAV-11-8-47), pode-se ver, na primeira página, uma árvore da vida, representada na ornamentação de uma capitular. O conceito…</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-05-25-072726-0025.html">
+    
+    <div class="pub-card-media">
+      <img src="imagens/960621773450995.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Mai 25, 2026 7:27:26 da manhã">25 de maio de 2026</time>
+        
+        <span class="pub-card-cat">Falsificações</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">A FASE DO TERROR</h3>
+      
+      
+      <p class="pub-card-excerto">A FASE DO TERROR Acho que já referi, em algum dos meus escritos, este epísódio da história numismática contemporânea nacional, mas penso que o abordei no teatro de operações da ANP. Acontece que a &#34;Fase do Terror&#34; foi…</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-05-24-063130-0026.html">
+    
+    <div class="pub-card-media">
+      <img src="imagens/959761050203734.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Mai 24, 2026 6:31:30 da manhã">24 de maio de 2026</time>
+        
+        <span class="pub-card-cat">Iconografia Religiosa</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">O TÚMULO DO CONDE D. HENRIQUE</h3>
+      
+      
+      <p class="pub-card-excerto">O TÚMULO DO CONDE D. HENRIQUE No reinado de D. Manuel, quando se trasladaram os restos mortais do conde D. Henrique, fez-se um novo túmulo, na Sé de Braga, no qual se gravaram as seguintes palavras: &#34;ENRICO VNGARORVM…</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-05-22-071238-0027.html">
+    
+    <div class="pub-card-media">
+      <img src="imagens/958157233697449.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Mai 22, 2026 7:12:38 da manhã">22 de maio de 2026</time>
+        
+        <span class="pub-card-cat">D. Afonso Henriques</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">A CONCESSÃO DE BRAGA AO TEMPO DE D. AFONSO HENRIQUES</h3>
+      
+      
+      <p class="pub-card-excerto">A CONCESSÃO DE BRAGA AO TEMPO DE D. AFONSO HENRIQUES Memórias de Braga, Tomo IV, 1890, Bernardino José de Senna Freitas.</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-05-22-051700-0028.html">
+    
+    <div class="pub-card-media">
+      <img src="imagens/958127603700412.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Mai 22, 2026 5:17:00 da manhã">22 de maio de 2026</time>
+        
+        <span class="pub-card-cat">Falsificações</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">UM ACHADO MONETÁRIO DO SÉCULO XVII, POSTO EM CAUSA NO SÉCULO XVIII</h3>
+      
+      
+      <p class="pub-card-excerto">UM ACHADO MONETÁRIO DO SÉCULO XVII, POSTO EM CAUSA NO SÉCULO XVIII Severim de Faria, nas suas Notícias de Portugal, editadas em 1655, descreve o achado, em Almeida, de uma moeda de Hermenegildo, apresentando a…</p>
+      
+    </div>
+  </a>
+</article>
+    
+    <article class="pub-card">
+  <a class="pub-card-link" href="artigos/2026-05-22-042518-0029.html">
+    
+    <div class="pub-card-media">
+      <img src="imagens/958052050374634.jpg" alt="" loading="lazy" width="160" height="120">
+    </div>
+    
+    <div class="pub-card-body">
+      <div class="pub-card-meta">
+        <time datetime="Mai 22, 2026 4:25:18 da manhã">22 de maio de 2026</time>
+        
+        <span class="pub-card-cat">D. João I</span>
+        
+      </div>
+      
+      <h3 class="pub-card-titulo">AS CONCESSÕES DE D. JOÃO I</h3>
+      
+      
+      <p class="pub-card-excerto">AS CONCESSÕES DE D. JOÃO I Memórias de Braga, Tomo IV, Bernardino José de Senna Freitas, 1890.</p>
+      
+    </div>
+  </a>
+</article>
+    
+  </div>
+
+  
+  <p class="ver-mais">
+    <a href="arquivo/index.html">Ver arquivo cronológico completo (420 publicações)</a>
+  </p>
+  
+</section>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Resistência Numismática — Arquivo Digital de Investigação em Numismática Medieval Portuguesa.</p>
+      <p>
+        <a href="indice-analitico.html">Índice Analítico</a> ·
+        <a href="categorias/index.html">Categorias</a> ·
+        <a href="feed.xml">RSS</a> ·
+        <a href="sobre.html">Sobre</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/search.js" defer></script>
+  <script src="js/categorias.js" defer></script>
+  
+</body>
+</html>
