@@ -1,0 +1,51 @@
+name: Corrigir canonicos uma unica vez
+on:
+  push:
+    branches:
+      - seo-canonical-batch-20261017
+permissions:
+  contents: write
+jobs:
+  corrigir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Corrigir apenas metadados dos 420 artigos
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          folder = Path("artigos")
+          old = b"https://resistencianumismatica.github.io/Resistencia_numismatica/"
+          new = b"https://resistencianumismatica.github.io/resistencia-numismatica/"
+          changed = []
+          already = []
+          for path in sorted(folder.glob("*.html")):
+              contents = path.read_bytes()
+              head_end = contents.lower().find(b"</head>")
+              if head_end == -1:
+                  raise RuntimeError(f"Ficheiro sem HEAD: {path}")
+              split_at = head_end + len(b"</head>")
+              head, body = contents[:split_at], contents[split_at:]
+              if old in body:
+                  raise RuntimeError(f"Referencia antiga fora do HEAD: {path}")
+              if old in head:
+                  updated = head.replace(old, new) + body
+                  assert updated.endswith(body)
+                  path.write_bytes(updated)
+                  changed.append(path)
+              elif new in head:
+                  already.append(path)
+              else:
+                  raise RuntimeError(f"Sem URL canonico conhecido: {path}")
+          if len(changed) != 413 or len(already) != 7:
+              raise RuntimeError(f"Esperados 413 alterados e 7 corrigidos; obtidos {len(changed)}, {len(already)}")
+          print(f"Corrigidos {len(changed)} artigos; {len(already)} ja estavam corrigidos.")
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/canonical-repair-once.yml
+          git add artigos
+          git diff --cached --check
+          git commit -m "Corrigir metadados canónicos dos 413 artigos restantes"
+          git push origin HEAD:seo-canonical-batch-20261017
